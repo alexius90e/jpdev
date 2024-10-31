@@ -11,8 +11,13 @@
     &:last-child {
       margin-bottom: 0;
     }
+
+    &_buy {
+      margin-top: 72px;
+      text-align: center;
+    }
   }
-  
+
   &__title {
     margin: 24px 0;
     font-weight: 900;
@@ -49,6 +54,29 @@
       width: 100%;
       font-weight: 700;
       line-height: 200%;
+    }
+  }
+
+  &__buy {
+    &-button {
+      padding: 16px 24px;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 120%;
+      color: #fff;
+      border: 2px solid #107cc0;
+      border-radius: 8px;
+      background-color: #107cc0;
+      transition: background-color ease-in-out 0.1s;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #0e6da9;
+      }
+
+      &:active {
+        background-color: #0a5d90;
+      }
     }
   }
 }

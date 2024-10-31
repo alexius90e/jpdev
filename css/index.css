@@ -52,6 +52,10 @@ img {
 .main-info__block:last-child {
   margin-bottom: 0;
 }
+.main-info__block_buy {
+  margin-top: 72px;
+  text-align: center;
+}
 .main-info__title {
   margin: 24px 0;
   font-weight: 900;
@@ -83,4 +87,22 @@ img {
   width: 100%;
   font-weight: 700;
   line-height: 200%;
+}
+.main-info__buy-button {
+  padding: 16px 24px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #fff;
+  border: 2px solid #107cc0;
+  border-radius: 8px;
+  background-color: #107cc0;
+  transition: background-color ease-in-out 0.1s;
+  cursor: pointer;
+}
+.main-info__buy-button:hover {
+  background-color: #0e6da9;
+}
+.main-info__buy-button:active {
+  background-color: #0a5d90;
 }
