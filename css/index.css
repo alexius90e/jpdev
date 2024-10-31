@@ -40,11 +40,78 @@ img {
   box-sizing: border-box;
 }
 
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 0;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 576px) {
+  .header {
+    padding: 16px 0;
+  }
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.header__logo-link-image {
+  display: block;
+  max-height: 60px;
+  max-width: 100%;
+  width: auto;
+}
+@media (max-width: 576px) {
+  .header__logo-link-image {
+    max-height: 40px;
+  }
+}
+.header__buy-button {
+  padding: 12px 24px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: #fff;
+  border: 2px solid #107cc0;
+  border-radius: 8px;
+  outline: none;
+  background-color: #107cc0;
+  transition: background-color ease-in-out 0.1s;
+  cursor: pointer;
+}
+@media (max-width: 576px) {
+  .header__buy-button {
+    padding: 10px 16px;
+    font-size: 10px;
+  }
+}
+.header__buy-button:hover {
+  background-color: #0e6da9;
+}
+.header__buy-button:active {
+  background-color: #0a5d90;
+}
+
 .main-info {
   padding: 48px 0;
 }
+@media (max-width: 576px) {
+  .main-info {
+    padding: 24px 0;
+  }
+}
 .main-info__block {
   margin: 40px 0;
+}
+@media (max-width: 576px) {
+  .main-info__block {
+    margin: 24px 0;
+  }
 }
 .main-info__block:first-child {
   margin-top: 0;
@@ -56,12 +123,23 @@ img {
   margin-top: 72px;
   text-align: center;
 }
+@media (max-width: 576px) {
+  .main-info__block_buy {
+    margin-top: 48px;
+  }
+}
 .main-info__title {
   margin: 24px 0;
   font-weight: 900;
   font-size: 36px;
   line-height: 150%;
   color: #107cc0;
+}
+@media (max-width: 576px) {
+  .main-info__title {
+    margin: 16px 0;
+    font-size: 24px;
+  }
 }
 .main-info__title:first-child {
   margin-top: 0;
@@ -75,6 +153,12 @@ img {
   font-size: 20px;
   line-height: 130%;
   color: #494949;
+}
+@media (max-width: 576px) {
+  .main-info__paragraph {
+    margin: 0 0 10px;
+    font-size: 14px;
+  }
 }
 .main-info__paragraph:first-child {
   margin-top: 0;
@@ -99,6 +183,12 @@ img {
   background-color: #107cc0;
   transition: background-color ease-in-out 0.1s;
   cursor: pointer;
+}
+@media (max-width: 576px) {
+  .main-info__buy-button {
+    padding: 12px 16px;
+    font-size: 16px;
+  }
 }
 .main-info__buy-button:hover {
   background-color: #0e6da9;

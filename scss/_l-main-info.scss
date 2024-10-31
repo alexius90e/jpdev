@@ -1,8 +1,16 @@
 .main-info {
   padding: 48px 0;
 
+  @include mobile {
+    padding: 24px 0;
+  }
+
   &__block {
     margin: 40px 0;
+
+    @include mobile {
+      margin: 24px 0;
+    }
 
     &:first-child {
       margin-top: 0;
@@ -15,6 +23,10 @@
     &_buy {
       margin-top: 72px;
       text-align: center;
+
+      @include mobile {
+        margin-top: 48px;
+      }
     }
   }
 
@@ -24,6 +36,11 @@
     font-size: 36px;
     line-height: 150%;
     color: #107cc0;
+
+    @include mobile {
+      margin: 16px 0;
+      font-size: 24px;
+    }
 
     &:first-child {
       margin-top: 0;
@@ -40,6 +57,11 @@
     font-size: 20px;
     line-height: 130%;
     color: #494949;
+
+    @include mobile {
+      margin: 0 0 10px;
+      font-size: 14px;
+    }
 
     &:first-child {
       margin-top: 0;
@@ -69,6 +91,11 @@
       background-color: #107cc0;
       transition: background-color ease-in-out 0.1s;
       cursor: pointer;
+
+      @include mobile {
+        padding: 12px 16px;
+        font-size: 16px;
+      }
 
       &:hover {
         background-color: #0e6da9;
